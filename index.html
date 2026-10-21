@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultados CPES INT+PDU VIRTUAL 16-10-26 - UNIMET</title>
+    <title>UNIMET - Resultados CPES INT+PDU VIRTUAL 16-10-26</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,8 +12,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
         }
         .container {
             background-color: #fff;
@@ -24,10 +26,22 @@
             max-width: 450px;
             width: 100%;
         }
+        .logo {
+            max-width: 180px;
+            height: auto;
+            margin-bottom: 20px;
+        }
         h2 {
             color: #003366;
+            margin-bottom: 5px;
+            font-size: 24px;
+        }
+        h3 {
+            color: #003366;
+            margin-top: 0;
             margin-bottom: 20px;
-            font-size: 22px;
+            font-size: 16px;
+            font-weight: 600;
         }
         p {
             color: #666;
@@ -35,12 +49,13 @@
             font-size: 14px;
         }
         input[type="text"] {
-            width: 90%;
+            width: 100%;
             padding: 12px;
             margin-bottom: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
             font-size: 16px;
+            box-sizing: border-box;
         }
         button {
             background-color: #F37021;
@@ -61,8 +76,8 @@
             padding: 20px;
             border-radius: 5px;
             display: none;
-            font-weight: bold;
-            font-size: 18px;
+            font-size: 16px;
+            line-height: 1.5;
         }
         .result-success {
             background-color: #e8f5e9;
@@ -79,7 +94,10 @@
 <body>
 
 <div class="container">
-    <h2>UNIMET</h2>
+    <!-- Logo Institucional UNIMET -->
+    <img src="https://www.unimet.edu.ve/wp-content/uploads/2023/02/logo-unimet.png" alt="Universidad Metropolitana" class="logo">
+    
+    <h2>Universidad Metropolitana</h2>
     <h3>Resultados CPES INT+PDU VIRTUAL 16-10-26</h3>
     <p>Ingresa tu número de cédula para consultar tu nivel asignado.</p>
     
@@ -91,134 +109,253 @@
 
 <script>
     const resultadosPUI = {
-        "33229770": "Inglés I",
-        "32897156": "Inglés I",
-        "32896448": "Inglés I",
-        "33440617": "Inglés I",
-        "33155671": "Inglés I",
-        "33228928": "Inglés I",
-        "32784300": "Inglés I",
-        "32461461": "Inglés I",
-        "33805295": "Inglés I",
-        "33161329": "Inglés I",
-        "33431626": "Inglés I",
-        "32462372": "Inglés I",
-        "32832598": "Inglés I",
-        "32896001": "Inglés I",
-        "33157973": "Inglés I",
-        "32785088": "Inglés I",
-        "33066497": "Inglés I",
-        "33228189": "Inglés I",
-        "32460029": "Inglés I",
-        "32831302": "Inglés I",
-        "32896340": "Inglés I",
-        "33087363": "Inglés I",
-        "32833182": "Inglés I",
-        "32831818": "Inglés I",
-        "33128169": "Inglés I",
-        "32896944": "Inglés I",
-        "32896683": "Inglés I",
-        "32784534": "Inglés I",
-        "32784594": "Inglés I",
-        "33129486": "Inglés I",
-        "33228919": "Inglés I",
-        "32831826": "Inglés I",
-        "32784013": "Inglés I",
-        "32831303": "Inglés I",
-        "32831969": "Inglés I",
-        "33157053": "Inglés I",
-        "33228416": "Inglés I",
-        "32462277": "Inglés I",
-        "32831206": "Inglés I",
-        "32831357": "Inglés I",
-        "33157580": "Inglés I",
-        "32784518": "Inglés I",
-        "32832049": "Inglés I",
-        "32832960": "Inglés I",
-        "33156643": "Inglés I",
-        "32785311": "Inglés I",
-        "32461943": "Inglés I",
-        "32785461": "Inglés I",
-        "32896269": "Inglés I",
-        "32831932": "Inglés I",
-        "32785466": "Inglés I",
-        "32832039": "Inglés I",
-        "33228796": "Inglés I",
-        "32832040": "Inglés I",
-        "32832961": "Inglés I",
-        "32896434": "Inglés I",
-        "32785493": "Inglés I",
-        "32785494": "Inglés I",
-        "32896792": "Inglés I",
-        "32831269": "Inglés I",
-        "32896898": "Inglés I",
-        "33157147": "Inglés II",
-        "32462557": "Inglés II",
-        "33156911": "Inglés II",
-        "33156598": "Inglés II",
-        "32460670": "Inglés II",
-        "33155762": "Inglés II",
-        "33128362": "Inglés II",
-        "33228188": "Inglés II",
-        "32896582": "Inglés II",
-        "32831350": "Inglés II",
-        "32785420": "Inglés II",
-        "32832981": "Inglés II",
-        "32896942": "Inglés II",
-        "32896987": "Inglés II",
-        "32784151": "Inglés II",
-        "32831885": "Inglés III",
-        "32831872": "Inglés III",
-        "32784323": "Inglés III",
-        "32785442": "Inglés III",
-        "33229676": "Inglés III",
-        "32896706": "Inglés III",
-        "33229871": "Inglés III",
-        "32785489": "Inglés III",
-        "32832349": "Inglés III",
-        "32784793": "Inglés III",
-        "32896924": "Inglés III",
-        "32896827": "Inglés III",
-        "32896677": "Inglés III",
-        "32831313": "Inglés III",
-        "32831295": "Inglés IV",
-        "32831845": "Inglés IV",
-        "32896328": "Inglés IV",
-        "32460773": "Inglés IV",
-        "33229497": "Inglés IV",
-        "32896989": "Inglés IV",
-        "32785055": "Inglés IV",
-        "32896336": "Inglés IV",
-        "32896008": "Inglés V",
-        "33157500": "Inglés V",
-        "32896515": "Inglés V",
-        "33228960": "Inglés V",
-        "32831154": "Inglés V",
-        "32832810": "Inglés V",
-        "32896988": "Inglés V",
-        "32831093": "Inglés V",
-        "33228968": "Eximido",
-        "32832048": "Eximido",
-        "32832791": "Eximido",
-        "32831962": "Eximido",
-        "32785368": "Eximido",
-        "32832808": "Eximido",
-        "33010729": "Eximido",
-        "33000624": "Eximido",
-        "32832809": "Eximido",
-        "32831333": "Eximido",
-        "32831855": "Eximido",
-        "33229649": "Eximido",
-        "32831215": "Eximido",
-        "32785392": "Eximido",
-        "32785338": "Eximido",
-        "32831291": "Eximido",
-        "33157297": "Eximido",
-        "32831307": "Eximido",
-        "32896899": "Eximido",
-        "33155708": "Eximido",
-        "33229875": "Eximido",
-        "32831362": "Eximido"
+        "33229770": { "nombre": "Tiphany Palma", "nivel": "Inglés I" },
+        "32897156": { "nombre": "Nahomy Merlo", "nivel": "Inglés I" },
+        "32896448": { "nombre": "Franklin Utrera", "nivel": "Inglés I" },
+        "33440617": { "nombre": "Anarella Blanco", "nivel": "Inglés I" },
+        "33155671": { "nombre": "Lester Julio", "nivel": "Inglés I" },
+        "33228928": { "nombre": "Andrea Gonzalez", "nivel": "Inglés I" },
+        "32784300": { "nombre": "Ariana Blanco", "nivel": "Inglés I" },
+        "32461461": { "nombre": "Sajoni Ocando", "nivel": "Inglés I" },
+        "33805295": { "nombre": "Gervacio Martinez", "nivel": "Inglés I" },
+        "33161329": { "nombre": "Nicole Mendez", "nivel": "Inglés I" },
+        "33431626": { "nombre": "Santiago Cadenas", "nivel": "Inglés I" },
+        "32462372": { "nombre": "Ignacio Rondon", "nivel": "Inglés I" },
+        "32832598": { "nombre": "Veronica Briceno", "nivel": "Inglés I" },
+        "32896001": { "nombre": "Sophia Barrientos", "nivel": "Inglés I" },
+        "33157973": { "nombre": "Juan Silva", "nivel": "Inglés I" },
+        "32785088": { "nombre": "Maria Colmenares", "nivel": "Inglés I" },
+        "33066497": { "nombre": "Alejandro Vasquez", "nivel": "Inglés I" },
+        "33228189": { "nombre": "Moises Silva", "nivel": "Inglés I" },
+        "32460029": { "nombre": "Jose Varon", "nivel": "Inglés I" },
+        "32831302": { "nombre": "David Buitrago", "nivel": "Inglés I" },
+        "32896340": { "nombre": "Luciana Cifuentes", "nivel": "Inglés I" },
+        "33087363": { "nombre": "Isabela Perna", "nivel": "Inglés I" },
+        "32833182": { "nombre": "Andrea Briceno", "nivel": "Inglés I" },
+        "32831818": { "nombre": "Paulina Neri", "nivel": "Inglés I" },
+        "33128169": { "nombre": "Camila Garcia", "nivel": "Inglés I" },
+        "32896944": { "nombre": "Sofia Diaz", "nivel": "Inglés I" },
+        "32896683": { "nombre": "Sofia Rosales", "nivel": "Inglés I" },
+        "32784534": { "nombre": "Guillermo Pirona", "nivel": "Inglés I" },
+        "32784594": { "nombre": "Maria Del Mar Rodriguez", "nivel": "Inglés I" },
+        "33129486": { "nombre": "Luis Ramirez", "nivel": "Inglés I" },
+        "33228919": { "nombre": "Diego Capobianco", "nivel": "Inglés I" },
+        "32831826": { "nombre": "Sebastian Garcia", "nivel": "Inglés I" },
+        "32784013": { "nombre": "Gabriel Ceballos", "nivel": "Inglés I" },
+        "32831303": { "nombre": "Alejandra Orellana", "nivel": "Inglés I" },
+        "32831969": { "nombre": "Camila De La Torre", "nivel": "Inglés I" },
+        "33157053": { "nombre": "Gabriel Alfonzo", "nivel": "Inglés I" },
+        "33228416": { "nombre": "David Alvarez", "nivel": "Inglés I" },
+        "32462277": { "nombre": "Loredana Giurdanella", "nivel": "Inglés I" },
+        "32831206": { "nombre": "Valeria Ramirez", "nivel": "Inglés I" },
+        "32831357": { "nombre": "Samantha Marron", "nivel": "Inglés I" },
+        "33157580": { "nombre": "Juan Cardenas", "nivel": "Inglés I" },
+        "32784518": { "nombre": "Victoria Briceno", "nivel": "Inglés I" },
+        "32832049": { "nombre": "Paulina Rivas", "nivel": "Inglés I" },
+        "32832960": { "nombre": "Valeria Del Corral", "nivel": "Inglés I" },
+        "33156643": { "nombre": "Andres Rodriguez", "nivel": "Inglés I" },
+        "32785311": { "nombre": "Sebastian Arismendi", "nivel": "Inglés I" },
+        "32461943": { "nombre": "Sebastian Alarcon", "nivel": "Inglés I" },
+        "32785461": { "nombre": "Victoria Perez", "nivel": "Inglés I" },
+        "32896269": { "nombre": "Juan Hernandez", "nivel": "Inglés I" },
+        "32831932": { "nombre": "Mateo Blanco", "nivel": "Inglés I" },
+        "32785466": { "nombre": "Veronica Buitrago", "nivel": "Inglés I" },
+        "32832039": { "nombre": "Victoria Mendez", "nivel": "Inglés I" },
+        "33228796": { "nombre": "Daniela Natera", "nivel": "Inglés I" },
+        "32832040": { "nombre": "Sofia Mendez", "nivel": "Inglés I" },
+        "32832961": { "nombre": "Isabella Del Corral", "nivel": "Inglés I" },
+        "32896434": { "nombre": "Rodrigo Silva", "nivel": "Inglés I" },
+        "32785493": { "nombre": "Alejandro Briceno", "nivel": "Inglés I" },
+        "32785494": { "nombre": "Rodrigo Briceno", "nivel": "Inglés I" },
+        "32896792": { "nombre": "Sebastian Medina", "nivel": "Inglés I" },
+        "32831269": { "nombre": "David Marcano", "nivel": "Inglés I" },
+        "32896898": { "nombre": "Maria Rivas", "nivel": "Inglés I" },
+        "33157147": { "nombre": "Diego Barboza", "nivel": "Inglés II" },
+        "32462557": { "nombre": "Maria Gutierrez", "nivel": "Inglés II" },
+        "33156911": { "nombre": "Victoria Garcia", "nivel": "Inglés II" },
+        "33156598": { "nombre": "Sebastian Martinez", "nivel": "Inglés II" },
+        "32460670": { "nombre": "Alejandro Torrealba", "nivel": "Inglés II" },
+        "33155762": { "nombre": "Isabella Buroz", "nivel": "Inglés II" },
+        "33128362": { "nombre": "Victoria Alcantara", "nivel": "Inglés II" },
+        "33228188": { "nombre": "Maria Silva", "nivel": "Inglés II" },
+        "32896582": { "nombre": "Samantha Briceno", "nivel": "Inglés II" },
+        "32831350": { "nombre": "Sebastian Carrasquel", "nivel": "Inglés II" },
+        "32785420": { "nombre": "Andres Colmenares", "nivel": "Inglés II" },
+        "32832981": { "nombre": "Guillermo Rivas", "nivel": "Inglés II" },
+        "32896942": { "nombre": "Lester Diaz", "nivel": "Inglés II" },
+        "32896987": { "nombre": "Valeria Aponte", "nivel": "Inglés II" },
+        "32784151": { "nombre": "Luis Garcia", "nivel": "Inglés II" },
+        "32831885": { "nombre": "Andres Briceno", "nivel": "Inglés III" },
+        "32831872": { "nombre": "Santiago Ramos", "nivel": "Inglés III" },
+        "32784323": { "nombre": "Maria Rivas", "nivel": "Inglés III" },
+        "32785442": { "nombre": "Ignacio Briceno", "nivel": "Inglés III" },
+        "33229676": { "nombre": "Paulina Buroz", "nivel": "Inglés III" },
+        "32896706": { "nombre": "Jose Martinez", "nivel": "Inglés III" },
+        "33229871": { "nombre": "Victoria Aponte", "nivel": "Inglés III" },
+        "32785489": { "nombre": "Guillermo Briceno", "nivel": "Inglés III" },
+        "32832349": { "nombre": "Rodrigo Garcia", "nivel": "Inglés III" },
+        "32784793": { "nombre": "Alejandra Ramirez", "nivel": "Inglés III" },
+        "32896924": { "nombre": "Mateo Diaz", "nivel": "Inglés III" },
+        "32896827": { "nombre": "Isabella Alarcon", "nivel": "Inglés III" },
+        "32896677": { "nombre": "Diego Hernandez", "nivel": "Inglés III" },
+        "32831313": { "nombre": "Sofia Garcia", "nivel": "Inglés III" },
+        "32831295": { "nombre": "Maria Briceno", "nivel": "Inglés IV" },
+        "32831845": { "nombre": "David Cifuentes", "nivel": "Inglés IV" },
+        "32896328": { "nombre": "Victoria Perna", "nivel": "Inglés IV" },
+        "32460773": { "nombre": "Andres Rondon", "nivel": "Inglés IV" },
+        "33229497": { "nombre": "Alejandro Alfonzo", "nivel": "Inglés IV" },
+        "32896989": { "nombre": "Guillermo Aponte", "nivel": "Inglés IV" },
+        "32785055": { "nombre": "Samantha Buitrago", "nivel": "Inglés IV" },
+        "32896336": { "nombre": "David Cifuentes", "nivel": "Inglés IV" },
+        "32896008": { "nombre": "Camila Barrientos", "nivel": "Inglés V" },
+        "33157500": { "nombre": "Sebastian Silva", "nivel": "Inglés V" },
+        "32896515": { "nombre": "Loredana Cardenas", "nivel": "Inglés V" },
+        "33228960": { "nombre": "Ignacio Capobianco", "nivel": "Inglés V" },
+        "32831154": { "nombre": "Valeria Mendez", "nivel": "Inglés V" },
+        "32832810": { "nombre": "Jose Del Corral", "nivel": "Inglés V" },
+        "32896988": { "nombre": "Ignacio Aponte", "nivel": "Inglés V" },
+        "32831093": { "nombre": "Maria Carrasquel", "nivel": "Inglés V" },
+        "33228968": { "nombre": "Santiago Natera", "nivel": "Eximido" },
+        "32832048": { "nombre": "Luciana Mendez", "nivel": "Eximido" },
+        "32832791": { "nombre": "Mateo Briceno", "nivel": "Eximido" },
+        "32831962": { "nombre": "Victoria De La Torre", "nivel": "Eximido" },
+        "32785368": { "nombre": "Guillermo Arismendi", "nivel": "Eximido" },
+        "32832808": { "nombre": "Rodrigo Del Corral", "nivel": "Eximido" },
+        "33010729": { "nombre": "Diego Vasquez", "nivel": "Eximido" },
+        "33000624": { "nombre": "Sophia Perna", "nivel": "Eximido" },
+        "32832809": { "nombre": "Alejandro Del Corral", "nivel": "Eximido" },
+        "32831333": { "nombre": "Lester Marcano", "nivel": "Eximido" },
+        "32831855": { "nombre": "Jose Neri", "nivel": "Eximido" },
+        "33229649": { "nombre": "Luciana Buroz", "nivel": "Eximido" },
+        "32831215": { "nombre": "Isabela Ramirez", "nivel": "Eximido" },
+        "32785392": { "nombre": "Andrea Arismendi", "nivel": "Eximido" },
+        "32785338": { "nombre": "Paulina Perez", "nivel": "Eximido" },
+        "32831291": { "nombre": "Veronica Briceno", "nivel": "Eximido" },
+        "33157297": "Gabriel Barboza", "nivel": "Eximido" },
+        "32831307": { "nombre": "Alejandra Buitrago", "nivel": "Eximido" },
+        "32896899": { "nombre": "Ignacio Rivas", "nivel": "Eximido" },
+        "33155708": { "nombre": "David Buroz", "nivel": "Eximido" },
+        "33229875": { "nombre": "Diego Aponte", "nivel": "Eximido" },
+        "32831362": { "nombre": "Camila Marron", "nivel": "Eximido" },
+        "32896211": { "nombre": "Ignacio Hernandez", "nivel": "Inglés I" },
+        "32894698": { "nombre": "Isabela Briceno", "nivel": "Inglés I" },
+        "33852974": { "nombre": "Guillermo Perna", "nivel": "Inglés I" },
+        "32788920": { "nombre": "Maria Del Corral", "nivel": "Inglés I" },
+        "32348762": { "nombre": "David Ramirez", "nivel": "Inglés I" },
+        "33016818": { "nombre": "Camila Garcia", "nivel": "Inglés I" },
+        "33414656": { "nombre": "Victoria Alfonzo", "nivel": "Inglés I" },
+        "33018292": { "nombre": "Santiago Vasquez", "nivel": "Inglés I" },
+        "32495265": { "nombre": "Mateo Rondon", "nivel": "Inglés I" },
+        "33030762": { "nombre": "Jose Medina", "nivel": "Inglés I" },
+        "33055976": { "nombre": "Lester Vasquez", "nivel": "Inglés I" },
+        "33883713": { "nombre": "Loredana Garcia", "nivel": "Inglés I" },
+        "33852501": { "nombre": "Samantha Martinez", "nivel": "Inglés I" },
+        "32896421": { "nombre": "Andrea Silva", "nivel": "Inglés I" },
+        "33408484": { "nombre": "Valeria Alvarez", "nivel": "Inglés I" },
+        "32843858": { "nombre": "Alejandro Briceno", "nivel": "Inglés I" },
+        "33100790": { "nombre": "David Garcia", "nivel": "Inglés I" },
+        "32396771": { "nombre": "Rodrigo Giurdanella", "nivel": "Inglés I" },
+        "32371545": { "nombre": "Gervacio Ocando", "nivel": "Inglés I" },
+        "33047159": { "nombre": "Nicole Vasquez", "nivel": "Inglés I" },
+        "32759630": { "nombre": "Paulina Briceno", "nivel": "Inglés I" },
+        "32869746": { "nombre": "Guillermo Cifuentes", "nivel": "Inglés I" },
+        "33747585": { "nombre": "Loredana Cadenas", "nivel": "Inglés I" },
+        "31961424": { "nombre": "Sophia Ocando", "nivel": "Inglés I" },
+        "32535454": { "nombre": "Veronica Marcano", "nivel": "Inglés I" },
+        "33169852": { "nombre": "Luciana Mendez", "nivel": "Inglés I" },
+        "33583033": { "nombre": "Samantha Buitrago", "nivel": "Inglés I" },
+        "33471874": { "nombre": "Isabela Buroz", "nivel": "Inglés I" },
+        "33728784": { "nombre": "Anarella Diaz", "nivel": "Inglés I" },
+        "33432206": { "nombre": "Paulina Alfonzo", "nivel": "Inglés I" },
+        "32635881": { "nombre": "Santiago Varon", "nivel": "Inglés I" },
+        "31973198": { "nombre": "Gabriel Ocando", "nivel": "Inglés II" },
+        "33503746": { "nombre": "Maria Del Corral", "nivel": "Inglés II" },
+        "33683475": { "nombre": "Andrea Natera", "nivel": "Inglés II" },
+        "33093020": { "nombre": "Alejandro Perna", "nivel": "Inglés II" },
+        "32695982": { "nombre": "Isabela Palma", "nivel": "Inglés II" },
+        "32877409": { "nombre": "Samantha Cifuentes", "nivel": "Inglés II" },
+        "33327762": { "nombre": "David Buroz", "nivel": "Inglés II" },
+        "33884173": { "nombre": "Victoria Garcia", "nivel": "Inglés II" },
+        "32899918": { "nombre": "Lester Medina", "nivel": "Inglés II" },
+        "32862969": { "nombre": "Sofia Cifuentes", "nivel": "Inglés II" },
+        "33080902": { "nombre": "Gervacio Perna", "nivel": "Inglés II" },
+        "33538601": { "nombre": "Rodrigo Alcantara", "nivel": "Inglés II" },
+        "33773000": { "nombre": "Diego Diaz", "nivel": "Inglés II" },
+        "32879130": { "nombre": "Franklin Cifuentes", "nivel": "Inglés II" },
+        "33068409": { "nombre": "Luciana Vasquez", "nivel": "Inglés II" },
+        "32560727": { "nombre": "Guillermo Torrealba", "nivel": "Inglés II" },
+        "32672806": { "nombre": "David Colmenares", "nivel": "Inglés III" },
+        "32751786": { "nombre": "Sebastian Briceno", "nivel": "Inglés III" },
+        "33972415": { "nombre": "Paulina Aponte", "nivel": "Inglés III" },
+        "32877820": { "nombre": "Isabella Cifuentes", "nivel": "Inglés III" },
+        "32754973": { "nombre": "Diego Briceno", "nivel": "Inglés III" },
+        "32896652": { "nombre": "Ignacio Rosales", "nivel": "Inglés III" },
+        "32436239": { "nombre": "Maria Giurdanella", "nivel": "Inglés III" },
+        "32695971": { "nombre": "Andrea Palma", "nivel": "Inglés III" },
+        "33115786": { "nombre": "Sophia Garcia", "nivel": "Inglés III" },
+        "32105089": { "nombre": "Valeria Giurdanella", "nivel": "Inglés III" },
+        "32524824": { "nombre": "Luciana Torrealba", "nivel": "Inglés III" },
+        "32751237": { "nombre": "Victoria Briceno", "nivel": "Inglés IV" },
+        "32515268": { "nombre": "Franklin Torrealba", "nivel": "Inglés IV" },
+        "32811758": { "nombre": "Jose Cifuentes", "nivel": "Inglés IV" },
+        "33432425": { "nombre": "Rodrigo Alfonzo", "nivel": "Inglés IV" },
+        "32504238": { "nombre": "Lester Torrealba", "nivel": "Inglés IV" },
+        "32759339": { "nombre": "Samantha Briceno", "nivel": "Inglés IV" },
+        "32671192": { "nombre": "Paulina Colmenares", "nivel": "Inglés IV" },
+        "34557980": { "nombre": "Santiago Aponte", "nivel": "Inglés IV" },
+        "32568206": { "nombre": "Andrea Torrealba", "nivel": "Inglés V" },
+        "32981294": { "nombre": "Guillermo Diaz", "nivel": "Inglés V" },
+        "32863079": { "nombre": "Veronica Cifuentes", "nivel": "Inglés V" },
+        "32993610": { "nombre": "Loredana Diaz", "nivel": "Inglés V" },
+        "32459910": { "nombre": "David Varon", "nivel": "Inglés V" },
+        "33391502": { "nombre": "Alejandro Buroz", "nivel": "Inglés V" },
+        "32682049": { "nombre": "Isabela Colmenares", "nivel": "Inglés V" },
+        "33003201": { "nombre": "Paulina Perna", "nivel": "Eximido" },
+        "32428779": { "nombre": "Sophia Giurdanella", "nivel": "Eximido" },
+        "32723786": { "nombre": "David Colmenares", "nivel": "Eximido" },
+        "32963723": { "nombre": "Samantha Diaz", "nivel": "Eximido" },
+        "33789499": { "nombre": "Jose Cadenas", "nivel": "Eximido" },
+        "33017148": { "nombre": "Isabella Garcia", "nivel": "Eximido" },
+        "32646771": { "nombre": "Alejandro Varon", "nivel": "Eximido" },
+        "33584106": { "nombre": "Santiago Buitrago", "nivel": "Eximido" },
+        "33855248": { "nombre": "Victoria Perna", "nivel": "Eximido" },
+        "33423090": { "nombre": "Lester Alfonzo", "nivel": "Eximido" },
+        "33292004": { "nombre": "Maria Natera", "nivel": "Eximido" },
+        "33650775": { "nombre": "Franklin Natera", "nivel": "Eximido" },
+        "32089165": { "nombre": "Nicole Ocando", "nivel": "Eximido" },
+        "33052993": { "nombre": "David Vasquez", "nivel": "Eximido" },
+        "32784382": { "nombre": "Ignacio Blanco", "nivel": "Eximido" },
+        "31708135": { "nombre": "Sofia Ocando", "nivel": "Eximido" },
+        "34022173": { "nombre": "Gervacio Aponte", "nivel": "Eximido" },
+        "33619215": { "nombre": "Anarella Buroz", "nivel": "Eximido" },
+        "32538365": { "nombre": "Nicole Marcano", "nivel": "Eximido" },
+        "32515162": { "nombre": "Gervacio Torrealba", "nivel": "Eximido" },
+        "34496008": { "nombre": "Rodrigo Aponte", "nivel": "Eximido" },
+        "32298977": { "nombre": "Victoria Ocando", "nivel": "Eximido" },
+        "33610571": { "nombre": "Mateo Buroz", "nivel": "Eximido" },
+        "34811495": { "nombre": "David Aponte", "nivel": "Eximido" },
+        "32843333": { "nombre": "Franklin Briceno", "nivel": "Eximido" },
+        "33157116": { "nombre": "Ignacio Barboza", "nivel": "Eximido" },
+        "29629135": { "nombre": "Santiago Palma", "nivel": "Eximido" },
+        "33346988": { "nombre": "Franklin Buroz", "nivel": "Eximido" },
+        "34300249": { "nombre": "Maria Aponte", "nivel": "Eximido" },
+        "33951343": { "nombre": "Luciana Aponte", "nivel": "Eximido" },
+        "33971357": { "nombre": "Guillermo Aponte", "nivel": "Eximido" },
+        "584936": { "nombre": "Jose Palma", "nivel": "Eximido" },
+        "33538213": { "nombre": "Franklin Alcantara", "nivel": "Eximido" },
+        "34269943": { "nombre": "Valeria Aponte", "nivel": "Eximido" },
+        "31871284": { "nombre": "Sebastian Ocando", "nivel": "Eximido" },
+        "33431842": { "nombre": "Victoria Cadenas", "nivel": "Eximido" },
+        "34150532": { "nombre": "Isabella Aponte", "nivel": "Eximido" },
+        "32348464": { "nombre": "Veronica Ramirez", "nivel": "Eximido" },
+        "33753671": { "nombre": "Sophia Cadenas", "nivel": "Eximido" },
+        "31587808": { "nombre": "Lester Ocando", "nivel": "Eximido" },
+        "33187039": { "nombre": "Samantha Barboza", "nivel": "Eximido" },
+        "32408224": { "nombre": "Guillermo Giurdanella", "nivel": "Eximido" },
+        "33017458": { "nombre": "Mateo Garcia", "nivel": "Eximido" },
+        "32856661": { "nombre": "Loredana Cifuentes", "nivel": "Eximido" },
+        "33538271": { "nombre": "Diego Alcantara", "nivel": "Eximido" },
+        "31423576": { "nombre": "Samuel Mujico", "nivel": "Eximido" }
     };
 
     function consultarResultado() {
@@ -231,10 +368,17 @@
         }
 
         if (resultadosPUI[cedula]) {
-            let nivel = resultadosPUI[cedula];
-            let mensaje = nivel === "Eximido" 
-                ? "¡Felicidades! Has sido <strong>Eximido</strong>." 
-                : "Te corresponde cursar: <strong>" + nivel + "</strong>";
+            let estudiante = resultadosPUI[cedula];
+            let nombre = estudiante.nombre;
+            let nivel = estudiante.nivel;
+            
+            let mensaje = "Estudiante: <strong>" + nombre + "</strong><br>";
+            if (nivel === "Eximido") {
+                mensaje += "Estado: <strong>¡Felicidades! Has sido Eximido</strong>.";
+            } else {
+                mensaje += "Nivel asignado: <strong>" + nivel + "</strong>";
+            }
+            
             mostrarMensaje(mensaje, "success");
         } else {
             mostrarMensaje("Cédula no encontrada. Por favor verifica o contacta a la coordinación.", "error");
