@@ -26,30 +26,27 @@
             border-top: 8px solid #f37021;
             margin: 20px auto;
         }
-        .logo-unimet {
-            max-width: 170px;
-            height: auto;
-            margin-bottom: 15px;
-        }
         .institution-title {
             color: #f37021;
-            font-size: 16px;
-            font-weight: bold;
-            letter-spacing: 1px;
-            margin-bottom: 5px;
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            margin-bottom: 8px;
         }
         h2 {
             color: #1e3a8a;
-            margin: 5px 0 10px 0;
-            font-size: 22px;
+            margin: 0 0 10px 0;
+            font-size: 20px;
             line-height: 1.3;
+            font-weight: 700;
         }
         p.subtitle {
             color: #555;
-            font-size: 13px;
-            font-weight: 600;
+            font-size: 14px;
+            font-weight: 700;
             margin-bottom: 25px;
             text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
         input[type="text"] {
             width: 85%;
@@ -111,12 +108,11 @@
 <body>
 
 <div class="container">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Logo_Unimet.png" alt="UNIMET" class="logo-unimet">
     <div class="institution-title">UNIMET</div>
-    <h2>Resultados PUI<br>CPES INT + PDU VIRTUAL</h2>
-    <p class="subtitle">16 de Octubre 2026</p>
+    <h2>PUI CPES INT + PDU VIRTUAL</h2>
+    <p class="subtitle">16 DE OCTUBRE 2026</p>
     
-    <input type="text" id="cedulaInput" placeholder="Ingrese su Cédula (Ej: 32896448)" onkeypress="checkEnter(event)">
+    <input type="text" id="cedulaInput" placeholder="Ingrese su Cédula" onkeypress="checkEnter(event)">
     <button onclick="buscarResultado()">Consultar</button>
 
     <div id="resultado" class="result-box"></div>
