@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -101,17 +100,17 @@
 <body>
 
 <div class="container">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Logo_Unimet.png" alt="Logo UNIMET" class="logo-unimet">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Logo_Unimet.png" alt="UNIMET" class="logo-unimet">
     <h2>Resultados PUI</h2>
     <p class="subtitle">Especial - 16 de Octubre</p>
     
-    <input type="text" id="cedulaInput" placeholder="Ingrese su Cédula (Ej: 33093020)" onkeypress="checkEnter(event)">
+    <input type="text" id="cedulaInput" placeholder="Ingrese su Cédula (Ej: 33115786)" onkeypress="checkEnter(event)">
     <button onclick="buscarResultado()">Consultar</button>
 
     <div id="resultado" class="result-box"></div>
 </div>
 
-<script src="datos.js"></script>
+<script src="./datos.js"></script>
 <script>
     function buscarResultado() {
         const input = document.getElementById('cedulaInput').value.trim();
@@ -124,14 +123,22 @@
             return;
         }
 
-        if (window.estudiantes && estudiantes[input]) {
+        if (typeof estudiantes !== 'undefined' && estudiantes[input]) {
             const estudiante = estudiantes[input];
-            divResultado.className = "result-box success";
-            divResultado.innerHTML = `
-                <div class="student-name">${estudiante.nombre}</div>
-                <div style="font-size: 14px; color: #555; margin-bottom: 5px;">Nivel Asignado:</div>
-                <div class="student-level">${estudiante.nivel}</div>
-            `;
+            if (typeof estudiante === 'object') {
+                divResultado.className = "result-box success";
+                divResultado.innerHTML = `
+                    <div class="student-name">${estudiante.nombre}</div>
+                    <div style="font-size: 14px; color: #555; margin-bottom: 5px;">Nivel Asignado:</div>
+                    <div class="student-level">${estudiante.nivel}</div>
+                `;
+            } else {
+                divResultado.className = "result-box success";
+                divResultado.innerHTML = `
+                    <div style="font-size: 14px; color: #555; margin-bottom: 5px;">Nivel Asignado:</div>
+                    <div class="student-level">${estudiante}</div>
+                `;
+            }
         } else {
             divResultado.className = "result-box error";
             divResultado.innerHTML = "Cédula no encontrada. Verifique los datos o contacte al departamento.";
